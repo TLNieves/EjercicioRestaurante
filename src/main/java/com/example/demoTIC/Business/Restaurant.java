@@ -1,6 +1,20 @@
 package com.example.demoTIC.Business;
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class Restaurant {
+    @Id
+    @SequenceGenerator(
+            name = "restaurant_sequence",
+            sequenceName = "restaurant_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "restaurant_sequence"
+    )
     private Long id;
     private String nombre;
     private Long telefono;
