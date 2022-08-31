@@ -1,10 +1,9 @@
 package com.example.demoTIC.Business;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/*
 @RestController
 @RequestMapping(path="api/restaurant")
 public class RestaurantController {
@@ -24,4 +23,4 @@ public class RestaurantController {
     public void registerNewRestaurant(@RequestBody Restaurant restaurant){
         restaurantService.addNewRestaurant(restaurant);
     }
-}
+} */

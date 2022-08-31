@@ -17,17 +17,17 @@ public class Restaurant {
     )
     private Long id;
     private String nombre;
-    private Long telefono;
+    private String telefono;
     private String dir;
 
-    public Restaurant(Long id, String nombre, Long telefono, String dir) {
+    public Restaurant(Long id, String nombre, String telefono, String dir) {
         this.id = id;
         this.nombre = nombre;
         this.telefono = telefono;
         this.dir = dir;
     }
 
-    public Restaurant(String nombre, Long telefono, String dir) {
+    public Restaurant(String nombre, String telefono, String dir) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.dir = dir;
@@ -52,11 +52,11 @@ public class Restaurant {
         this.nombre = nombre;
     }
 
-    public Long getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(Long telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

@@ -15,14 +15,14 @@ public class RestaurantConfig {
                     Restaurant club= new Restaurant(
                             1L,
                             "Club de la Papa Frita",
-                            2L,
+                            "aa",
                             "Rivera esq 20 de Setiembre"
                     );
 
             Restaurant harlem= new Restaurant(
                     2L,
                     "Harlem",
-                    3L,
+                    "aaaa",
                     "Rivera esq pdte oribe"
             );
             repository.saveAll(List.of(club,harlem));
